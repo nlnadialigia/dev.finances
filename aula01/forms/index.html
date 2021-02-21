@@ -1,0 +1,222 @@
+  <h1>Exemplo de form</h1>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Contato</legend>
+      
+      <label for="">Nome</label>
+      <input type="text" name="" id="">
+    </fieldset>
+  </form> 
+
+  <br><br>
+  <h1>Exemplo de button</h1>
+  <form action="">
+    <input type="text" value="alguma coisa">
+    <button type="reset">Limpar</button>
+  </form> 
+
+  <br><br>
+  <h1>Exemplo de datalist</h1>
+  <input 
+    type="text" 
+    list="fruitsdata" 
+    placeholder="Escolha uma fruta"
+  >
+  <datalist id="fruitsdata">
+    <option value="apple">apple</option>
+    <option value="banana">banana</option>
+    <option value="mango">mango</option>
+    <option value="orange">orange</option>
+    <option value="cherry">cherry</option>
+  </datalist>
+
+  <input type="color" list="colorsdata">
+  <datalist id="colorsdata">
+    <option value="#ff0000">#ff0000</option>
+    <option value="#00ff00">#00ff00</option>
+  </datalist> 
+
+
+<br><br>
+  <h1>Exemplo de Password</h1>
+<form action="">
+  <input type="password" 
+    pattern="[0-9a-fA-F]{4,8}"
+    title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres"
+    placeholder="Coloque sua senha"
+  >
+  <button type="submit">Enviar</button>
+</form>  
+
+
+<br><br>
+<h1>Exemplo de Email</h1>
+<form action="" method="get">
+  <input type="email" 
+    placeholder="digite o email"
+  >
+  
+  <button type="submit">Enviar</button>
+  
+</form> 
+
+
+<br><br>
+<h1>Exemplo de URL</h1>  
+<form action="" method="get">
+  <input type="url" 
+    placeholder="http//example.com.br"
+    pattern=".*\.com\.br.*"
+    title="Somente domínios .com.br serão aceitos"
+  >
+  
+  <button type="submit">Enviar</button>
+</form> 
+
+
+<br><br>
+<h1>Exemplo de File</h1>  
+
+<form action="" method="POST" enctype="multipart/form-data">
+  <input type="file">
+</form> 
+
+
+<br><br>
+<h1>Exemplo de Color</h1>
+
+<datalist id="colordata">
+  <option value="#f00078"></option>
+  <option value="#4a47a3"></option>
+  <option value="#314e52"></option>
+</datalist>
+
+<input type="color" 
+  value="#ff0005" 
+  list="colordata"
+> 
+
+<br><br>
+<h1>Exemplo de Checkbox</h1>
+
+<label for="subscribe">Receber notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe">
+
+<br><br><br><br> 
+
+<h1>Exemplo de Checkbox - mútiplos valores</h1>
+
+<fieldset>
+  <legend>Choose your interests</legend>
+  <div>
+    <input type="checkbox" name="interest" id="coding" value="coding" checked>
+    <label for="coding">Coding</label>
+  </div>
+  <div>
+    <input type="checkbox" name="interest" id="music" value="music">
+    <label for="music">Music</label>
+  </div>
+</fieldset> 
+
+
+<br><br> 
+<h1>Exemplo de Radio</h1>
+ <fieldset>
+   <legend>Bora toamar um café?</legend>
+
+   <label for="yep">sim</label>
+   <input type="radio" name="coffee" id="yep" value="yes">
+
+   <label for="nono">não</label>
+   <input type="radio" name="coffee" id="nono" value="no">
+ </fieldset>
+  
+
+<br><br>
+ <h1>Exemplo de Textarea</h1>
+<label for="message">Mensagem</label><br>
+<textarea id="message" name="message" cols="30" rows="10"></textarea>
+ 
+
+<br><br>
+<h1>Exemplo de Select</h1>
+
+<label for="carselect">Qual modelo do carro?</label><br>
+<select name="carmodel" id="carselect" >
+  <option value="">Selecione o modelo</option>
+  <option value="fiat">Uno</option>
+  <option value="audi">A3</option>
+  <option value="bmw">X6</option>
+</select>
+ 
+
+<br><br>
+<h1>Exemplo de Optgroup</h1>
+
+<label for="">Please choose one or more pets:
+  <select name="pets" size="">
+    <optgroup label="4-legged pets">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster" disabled>Hamster</option>
+    </optgroup>
+    <optgroup label="Flying pets">
+      <option value="parrot">Parrot</option>
+      <option value="macaw">Macaw</option>
+      <option value="albatross">Albatross</option>
+    </optgroup>
+  </select>
+</label> 
+
+<br><br>
+<h1>Exemplo de Search - datalist</h1>
+
+<datalist id="searchterms">
+  <option value="Mac">Mac</option>
+  <option value="Win">Win</option>
+  <option value="Linux">Linux</option>
+</datalist>
+
+<form action="">
+  <input type="search" name="q" list="searchterms" 
+    placeholder="Digite seu termo de busca" 
+    size="30" 
+    aria-label="Campo de pesquisa: Digite seu termo de busca">
+  <button type="submit">Pesquisar</button>
+</form> 
+
+<br><br>
+<h1>Exemplo de Search - pattern</h1>
+
+<form action="">
+  <label for="">Pesquisar pelo ID</label>
+  <input type="search" name="id" size="12"
+    pattern="[0-9]{2}"
+    title="Digite o número do ID: 99"
+  >
+  <button type="submit">Pesquisar</button>
+</form> 
+
+<br><br>
+<h1>Exemplo de Number</h1>
+<form action="">
+  <input type="number" min="0" max="1000" step="50">
+  <button type="submit">Enviar</button>
+</form> 
+
+
+<br><br>
+<h1>Exemplo de Range</h1>
+
+<input type="range" min="0" max="1000" step="1" value="0"> 
+
+<h1>Outros campos interessantes</h1>
+<br>
+<label for="">Date</label>
+<input type="date">
+<br><br><br><br>
+<label for="">Month</label>
+<input type="month" name="" id="">
+<br><br><br><br>
+<label for="">Week</label>
+<input type="week" name="" id="">

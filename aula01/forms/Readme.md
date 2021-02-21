@@ -269,38 +269,274 @@ Atributos
   - `<datalist>` irá conter uma lista de valores pré-definidos a fim de sugerir ao usuário, quais valores estão disponíveis.
     - Os valores do `<datalist>` que não forem compatíveis com o campo, não serão apresentados como sugestão
 
-### 📚 URL
+```html
+<input type="email" 
+    placeholder="digite o email"
+  >
+  
+  <button type="submit">Enviar</button>
+```
+<br>
 
-### 📚 File
+### 📚 `<input type="url">`
+- Espera que o uusário digite uma URL
+- irá validar se o valor digitado é uma url
 
-### 📚 Color
+▶️ Atributos
+- placeholder
+- readonly / disabled
+- value
+- required
+- minlength / maxlength
+- size
+- list
 
-### 📚 Checkbox
+
+- `pattern`
+  - uso de expressão reglar para validar o campo
+  - *exemplo*: o usuário só poderá colocar domínimo `.com.br`
+    - pattern=".*\.com\.br\/.*"
+
+- `spellcheck` => habilita a verficação ortográfrica para este unput
+```html
+<form action="" method="get">
+  <input type="url" 
+    placeholder="http//example.com.br"
+    pattern=".*\.com\.br.*"
+    title="Somente domínios .com.br serão aceitos"
+  >
+  
+  <button type="submit">Enviar</button>
+</form>
+```
+<br>
+
+### 📚 `<input type="file">`
+- usuário poderá escolher 1 ou mais arquivos para enviar no formulário.
+
+▶️ Atributos
+- `value` => contém o arquivo a ser enviado
+
+- `accept` => descreve que tipos de arquivos serão aceitos. *Exemplo*: .doc, .docx, .pdf, audio/*, image/png, .png
+
+- `files` => a lista de arquivos
+
+- `multiple` => permite o envio de múltiplos arquivos
+
+▶️ Envio dos arquivos
+
+Para envio dos arquivos o formulário deverá utilizar o método `POST` e o atributo `enctype` como `multipart/form-data`
+
+<p align="center">
+  <img src="./assets/file.gif">
+</p>
+
+<br>
+
+### 📚 `<input type="color">`
+- interface para selecionar cor
+- Color picker
+
+▶️ atributos
+- `value` => RGB => se inválido, o preto será exibido.
+- `list` => não disponível para alguns browsers
+
+<p align="center">
+  <img src="./assets/color.gif">
+</p>
+
+<br>
+
+### 📚 `<input type="checkbox">`
+- caixas que podem ser marcadas.
+- selecionar o valor para ser enviado
+- se não selecionado, não será enviado nenhum dado
+
+▶️ Atributos
+- globais
+- `value` => valor que aque campo contém. Se não estiver presente, o padrão é `on`.
+- `checked` => para deixar o campo marcado por padrão.
+
+<p align="center">
+  <img src="./assets/checkbox1.gif">
+</p>
+
+<br>
+
+▶️ Marcar múltiplos Valores
+- utilizado o atributo `name` como o mesmo nome para os diversos campos.
+
+<p align="center">
+  <img src="./assets/checkbox2.gif">
+</p>
+
+<br>
  
-### 📚 Hidden
+### 📚 `<input type="hidden">`
+- invisível ao usuário
+- será enviado com o formulário
+- não receberá foco
+- leitores de tela nã percebem esse campo
 
-### 📚 Radio
+```html
+<input type="hidden" name="timestamp" id="timestamp" value="1286705410">
+```
 
-### 📚 Textarea
+<br>
 
-### 📚 Select
+### 📚 `<input type="radio">`
+- projetado para selecionar uma única opção de um grupo de opções
 
-### 📚 Optgroup
+▶️ Atributos
+- `checked` => indica que o campo foi marcado
+- `value` => valor que aquee campo contém
 
-### 📚 Search
+<p align="center">
+  <img src="./assets/radio.gif">
+</p>
 
-### 📚 Number
+<br>
 
-### 📚 Range
+### 📚 `<input type="textarea">`
+- textos de mais de uma linha
+- útil para textos grandes
 
-### 📚 Data e hora
+▶️ Atributos
+- id
+- name
+- rows e cols
+- maxlength e minlength
+- `wrap` => quebra de linha. Vem de padrão `soft`
+- outros comuns: autocomplete, autofocus, disabled, placeholder, readonly, form, required
+
+```html
+<label for="message">Mensagem</label><br>
+<textarea id="message" name="message" cols="30" rows="10"></textarea>
+```
+
+<br>
+
+### 📚 `<input type="select">`
+- controle que fornece um menu de opções
+
+- `<option>`
+  - contém as opções a serem selecionadas
+  - atributos necessários: `value`
+
+▶️ Atributos únicos
+- `multiple` => habilita múyltiplas opções
+- `size`=> quando opções visíveis
+
+<p align="center">
+  <img src="./assets/select.gif">
+</p>
+
+<br>
+
+### 📚 `<input type="optgroup">`
+- agrupamento dos `options` dentro do `select`
+- importante utilizar o atributo label para identificação dos grupos
+
+<p align="center">
+  <img src="./assets/optgroup.gif">
+</p>
+
+<br>
+
+### 📚 `<input type="search">`
+- para campos de busca
+- é igual ao campo do tipo `text` mas poderá ser um pouco diferente dependendo do `user agente`
+
+▶️ Atributos
+- list / datalist
+- pattern
+- `aria-label` => opção quando não se tem o label
+
+▶️ Exemplo com `datalist`
+<p align="center">
+  <img src="./assets/search1.gif">
+</p>
+
+<br>
+
+▶️ Exemplo com `pattern`
+<p align="center">
+  <img src="./assets/search2.gif">
+</p>
+
+<br>
+
+### 📚 `<input type="number">`
+- entrada de números
+
+▶️ Atributos
+- `min/max` => maior e/ou menor número permitido
+- `step` => de quanto em quanto será computado o número do input
+
+```html
+<form action="">
+  <input type="number" min="0" max="1000" step="50">
+  <button type="submit">Enviar</button>
+</form>
+```
+
+### 📚 `<input type="range">`
+- controle para selecionar um valor numérico
+- slider ou dial controle
+
+▶️ Atributos
+- min/max
+- step
+
+<p align="center">
+  <img src="./assets/range.gif">
+</p>
+
+<br>
+
+### 📚 Outros campos interessantes
+- sempre verificar se há suporte para os browsers.
+
+<p align="center">
+  <img src="./assets/others.gif">
+</p>
 
 <br>
 
 ## 📌 Criando um formulário
 
+### 📚 Desenhando
+- Pensar nos requisitos
+- Ajuda a definir as necessidades
+
+▶️ **Dicas**
+- simples e focado
+- somente dados necessários
+- verifique o que te agrada
+
+<img src="./assets/modelo.png" width=300>
 
 <br>
+
+### 📚 Criação de um formulário de Contato
+
+1. O formulário deverá conter um título de nome Contato. Usar `fieldset` e `legend` para essa finalidade.
+
+2. O formulário conterá 3 campos: 
+    - nome (input text)
+    - email (input email)
+    - mensagem (textarea)
+
+3. O formulário deverá conter um botão para enviar
+
+**Atenção:** O formulário deverá conter regras d3 acessibilidade, como o `label` para cada campo, por exemplo.
+
+▶️ [Formulário](./form.html)
+
+▶️ Resultado
+<img src="./assets/result.png">
+
+<br><br>
 
 # 👩‍💼 Autora
 <img style="border-radius: 50%" src="../../assets/picture.jpg" width="100px;" alt="Picture"/>
