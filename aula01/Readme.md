@@ -42,6 +42,7 @@
 ### 📌 Revisão
 * HTML
   - [O guia estelar de HTML](https://app.rocketseat.com.br/node/o-guia-estelar-de-html)
+    - [Exercício](./exercicio01)
   - [HTML que faz sentido para todos](https://app.rocketseat.com.br/node/html-que-faz-sentido-para-todos)
   <br>
 
@@ -86,4 +87,4 @@
 
 # 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
