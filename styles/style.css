@@ -1,6 +1,9 @@
 /* GLOBAL */
 :root {
   --dark-blue: #363f5f;
+  --green: #49aa26;
+  --light-green: #3dd705;
+  --red: #e92929;
 }
 
 *{
@@ -15,7 +18,7 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
-  background: #f0f2f5;
+  background: #f4f9f9;
 }
 
 .container{
@@ -48,12 +51,31 @@ h2{
 /* Links and buttons */
 
 a{
-  color: #49aa26;
+  color: var(--green);
   text-decoration: none;
 }
 
 a:hover{
-  color: #3dd705;
+  color: var(--light-green);
+}
+
+button{
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 0.25rem;
+
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--green);
+
+  padding: 0;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--light-green);
 }
 
 .button.new{
@@ -61,9 +83,32 @@ a:hover{
   margin-bottom: 0.8rem;
 }
 
+.button.cancel{
+  color: var(--red);
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px var(--red) solid;
+  border-radius: 0.25rem;
+
+  font-weight: bold;
+  opacity: 0.6;
+
+  padding: 0;
+  cursor: pointer;
+}
+
+.button.cancel:hover{
+  opacity: 1;
+}
+
 /* Header */
 header {
-  background: #2D4A22;
+  background: #413c69;
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -110,7 +155,7 @@ header {
 }
 
 .card.total{
-  background: #49aa26;
+  background: var(--green);
   color: #fff;
 }
 
@@ -167,11 +212,82 @@ td.income{
 }
 
 td.expense{
-  color: #e92929;
+  color: var(--red);
 }
 
 td img{
   cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-overlay{
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 999;
+}
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal{
+  background: #f0f2f5;
+  padding: 2.4rem;
+  
+  position: relative;
+  z-index: 1;
+}
+
+/* Form */
+
+#form{
+  max-width: 500px;
+}
+
+#form h2{
+  margin-top: 0;
+}
+
+input{
+  border: none;
+  border-radius: 0.2rem;
+
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.input-group{
+  margin-top: 0.8rem;
+}
+
+.input-group small{
+  opacity: 0.4;
+}
+
+.input-group.actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button{
+  width: 48%;
 }
 
 /* Footer */
