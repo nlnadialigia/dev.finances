@@ -42,7 +42,7 @@
 ### 📌 Revisão
 * HTML
   - [O guia estelar de HTML](https://app.rocketseat.com.br/node/o-guia-estelar-de-html)
-    - [Exercício](./exercicio01)
+    - [Exercício](./exercicio)
   - [HTML que faz sentido para todos](https://app.rocketseat.com.br/node/html-que-faz-sentido-para-todos)
   <br>
 
@@ -67,7 +67,9 @@
 
 * HTML
   - [Posso ver e ouvir o HTML](https://app.rocketseat.com.br/node/posso-ver-e-ouvir-o-html)
+    - [Exemplo](./exemplo)
   - [Formulários de outro planeta](https://app.rocketseat.com.br/node/formularios-de-outro-planeta)
+    - [Forms](./forms)
 <br>
 
 * CSS

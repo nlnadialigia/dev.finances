@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: min(90vw, 800px);
+  margin: 10px auto;
+}
+
+h1, h3, iframe{
+  margin: 10px auto;
+}
