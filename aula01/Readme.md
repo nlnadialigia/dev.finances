@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="#-information_source-sobre-a-aula">Sobre</a> •
-  <a href="#-open_file_folder-aulas">Aulas</a> • 
+  <a href="#-open_file_folder-conteúdo">Conteúdo</a> • 
   <a href="#-woman_office_worker-autora">Autora</a> • 
   <a href="#-pencil-licença">Licença</a>
 </p>
@@ -22,7 +22,7 @@
 
 # ℹ️ Sobre a aula
 
-### Estrutura da aplicação com HTML e estilização inicial com CSS.
+Estrutura da aplicação com HTML e estilização inicial com CSS.
 
 <br>
 

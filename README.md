@@ -22,16 +22,16 @@
 
 # ℹ️ Sobre o projeto 
 
-### Repositório dedicado a documentar as aulas do curso [Maratona Discover](https://maratonadiscover.rocketseat.com.br/) oferecido gratuitamente pela [Rocketseat](https://rocketseat.com.br) e ministrado por [Mayk Brito](https://github.com/maykbrito/maykbrito).
+#### Repositório dedicado a documentar as aulas do curso [Maratona Discover](https://maratonadiscover.rocketseat.com.br/) oferecido gratuitamente pela [Rocketseat](https://rocketseat.com.br) e ministrado por [Mayk Brito](https://github.com/maykbrito/maykbrito).
 <br>
 
-### O repositório armazenará as pastas representando cada aula e na pasta principal terá o projeto completo.
+#### O repositório armazenará as pastas representando cada aula e na pasta principal terá o projeto completo.
 <br>
 
-### Cada aula conterá um Readme com o que foi aprendido e/ou orientado a estudar, bem como o demo do projeto no final da aula.
+#### Cada aula conterá um Readme com o que foi aprendido e/ou orientado a estudar, bem como o demo do projeto no final da aula.
 <br>
 
-### O `dev.finances` é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰.
+#### O `dev.finances` é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰.
 
 <br>
 
@@ -40,8 +40,8 @@
 
 ### 📌 [Aula 01 - A Base de tudo](./aula01)
 
-<!-- ### 📌 [Aula 02 - Finalização do HTML + CSS](./aula03)
-
+### 📌 [Aula 02 - Finalização do HTML + CSS](./aula02)
+<!-- 
 ### 📌 [Aula 03 - Adicionando JavaScript](./aula03)
 
 ### 📌 [Aula 04 - Aula de Encerramento](./aula04) -->
