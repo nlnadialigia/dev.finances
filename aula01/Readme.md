@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/logo.png" width=200></p>
+<p align="center"><img src="./assets/logo.png" width=200></p>
 
 ---
 
@@ -32,7 +32,7 @@ Estrutura da aplicação com HTML e estilização inicial com CSS.
 ## 📚 Apresentação
 <br>
 <p align="center">
-<img src="../assets/aula01.png" height=400>
+<img src="./assets/aula01.png" height=400>
 </p>
 <br>
 

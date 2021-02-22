@@ -1,4 +1,4 @@
-<p align="center"><img src="../../assets/logo-ex01.png"></p>
+<p align="center"><img src="./assets/logo-ex01.png"></p>
 
 ---
 

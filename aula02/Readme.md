@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/logo.png" width=200></p>
+<p align="center"><img src="./assets/logo.png" width=200></p>
 
 ---
 
@@ -39,7 +39,7 @@ Finalização do HTML + CSS
 ## 📚 Apresentação
 <br>
 <p align="center">
-<img src="../assets/aula02.png" height=400>
+<img src="./assets/class02.gif" height=400>
 </p>
 <br>
 
@@ -48,12 +48,16 @@ Finalização do HTML + CSS
 
 ### 📌 Revisão
 * HTML
-  - [Posso ver e ouvir o HTML]()
-  - [Formulários de outro planeta]()
+  - [Posso ver e ouvir o HTML](https://app.rocketseat.com.br/node/posso-ver-e-ouvir-o-html)
+    - [Exemplo](../aula01/exemplo)
+  - [Formulários de outro planeta](https://app.rocketseat.com.br/node/formularios-de-outro-planeta)
+    - [Forms](../aula01/forms)
 * CSS
-  - [Nem só de classes ou ID's]()
+    - [Nem só de classes ou ID's](https://app.rocketseat.com.br/node/nem-so-de-classes-ou-i-ds)
+      - [Css](../aula01/css)
 ### Para acompanhar a próxima aula
-* - [O guia estelar de JavaScript]()
+* [O guia estelar de JavaScript](https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script)
+  - [javascript](./javascript)
 <br>
 
 # 👩‍💼 Autora
