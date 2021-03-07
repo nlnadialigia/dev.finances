@@ -44,6 +44,8 @@ O `dev.finances` é uma aplicação de controle financeiro, onde é possível ca
 
 ### 📌 [Aula 03 - Adicionando JavaScript](./aula03)
 
+### 🔗 Quer ver a aplicação rodando? [Clique aqui!](https://nlnadialigia-dev-finances.vercel.app)
+
 <br>
 
 # 👩‍💼 Autora
