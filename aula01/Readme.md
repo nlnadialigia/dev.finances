@@ -1,4 +1,5 @@
 <p align="center"><img src="./assets/logo.png" width=200></p>
+<h2 align="center">Aula 01</h2>
 
 ---
 
@@ -11,6 +12,8 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=licence&message=MIT&color=91091e"/>
   </a>
 </p>
+
+---
 
 <p align="center">
   <a href="#-information_source-sobre-a-aula">Sobre</a> •

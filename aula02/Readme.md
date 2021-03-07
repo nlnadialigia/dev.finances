@@ -1,5 +1,7 @@
 <p align="center"><img src="./assets/logo.png" width=200></p>
 
+<h2 align="center">Aula 02</h2>
+
 ---
 
 <p align="center">
@@ -12,6 +14,7 @@
   </a>
 </p>
 
+---
 <p align="center">
   <a href="#-information_source-sobre-a-aula">Sobre</a> •
   <a href="#-open_file_folder-aulas">Aulas</a> • 
