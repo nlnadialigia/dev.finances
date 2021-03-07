@@ -41,9 +41,10 @@ O `dev.finances` é uma aplicação de controle financeiro, onde é possível ca
 ### 📌 [Aula 01 - A Base de tudo](./aula01)
 
 ### 📌 [Aula 02 - Finalização do HTML + CSS](./aula02)
-<!-- 
+
 ### 📌 [Aula 03 - Adicionando JavaScript](./aula03)
 
+<!-- 
 ### 📌 [Aula 04 - Aula de Encerramento](./aula04) -->
 
 <br>

@@ -23,6 +23,7 @@
     ],
     "no-console": "off",
     "space-before-function-paren": "off",
-    "space-before-blocks": "off"
+    "space-before-blocks": "off",
+    "no-unused-vars": "off"
   }
 }
