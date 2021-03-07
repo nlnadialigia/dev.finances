@@ -36,6 +36,12 @@ const transactions = [
 
 const Transaction = {
   all: transactions,
+
+  add(transaction) {
+    Transaction.all.push(transaction);
+    App.reload();
+  },
+
   incomes() {
     let income = 0;
 
@@ -102,6 +108,10 @@ const DOM = {
     document
       .getElementById('totalDisplay')
       .innerHTML = Utils.formatCurrency(Transaction.total());
+  },
+
+  clearTransactions() {
+    DOM.transactionsContainer.innerHTML = '';
   }
 };
 
@@ -122,8 +132,26 @@ const Utils = {
   }
 };
 
-transactions.forEach(transaction => {
-  DOM.addTransaction(transaction);
-});
+const App = {
+  init() {
+    Transaction.all.forEach(transaction => {
+      DOM.addTransaction(transaction);
+    });
 
-DOM.updateBalance();
+    DOM.updateBalance();
+  },
+
+  reload() {
+    DOM.clearTransactions();
+    App.init();
+  }
+};
+
+App.init();
+
+Transaction.add({
+  id: 39,
+  description: 'alo',
+  amount: 200,
+  date: '25/01/2021'
+});
